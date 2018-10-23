@@ -95,9 +95,9 @@
 - (void)startTimer{
     CGFloat granularity = 0.005;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.01 repeats:YES block:^(NSTimer * _Nonnull timer) {
-            self.location += granularity;
-            self.gradientLayer.colors = @[(id)[[UIColor whiteColor] colorWithAlphaComponent:1-self.location].CGColor ,
-                                          (id)[[UIColor whiteColor] colorWithAlphaComponent:self.location].CGColor ];
+        self.location += granularity;
+        self.gradientLayer.colors = @[(id)[[UIColor whiteColor] colorWithAlphaComponent:1-self.location].CGColor ,
+                                      (id)[[UIColor whiteColor] colorWithAlphaComponent:self.location].CGColor ];
         self.gradientLayer.locations = @[[NSNumber numberWithFloat:self.location],
                                          [NSNumber numberWithFloat:self.location]];
         if (self.location > 1) {

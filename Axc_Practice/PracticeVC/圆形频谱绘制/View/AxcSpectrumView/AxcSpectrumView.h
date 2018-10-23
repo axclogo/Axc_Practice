@@ -10,6 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, AxcSpectrumViewSytle) {
+    AxcSpectrumViewSytleBuffer,
+    AxcSpectrumViewSytleLevel,
+};
+
 @interface AxcSpectrumView : EZAudioPlot
 
 // 默认 10000Hz
@@ -33,6 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 内圆半径 默认50
 @property(nonatomic , assign)CGFloat drawRadius;
+
+// 样式 默认AxcSpectrumViewSytleBuffer
+@property(nonatomic , assign)AxcSpectrumViewSytle style;
 
 @end
 

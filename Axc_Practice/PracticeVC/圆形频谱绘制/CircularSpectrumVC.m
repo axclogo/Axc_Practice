@@ -62,7 +62,8 @@
         _spectrumView = [AxcSpectrumView new];
         _spectrumView.backgroundColor = kBackColor;
         _spectrumView.spectrumNum = 100;
-//        [_spectrumView.bufferLayer addAnimation:[AxcCAAnimation AxcRotatingDuration:10] forKey:nil];
+//        _spectrumView.style = AxcSpectrumViewSytleLevel;
+//        [_spectrumView.bufferLayer addAnimation:[AxcCAAnimation AxcRotatingDuration:10 clockwise:NO] forKey:nil];
         [self.view addSubview:_spectrumView];
     }
     return _spectrumView;
