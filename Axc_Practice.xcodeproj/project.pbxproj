@@ -63,6 +63,10 @@
 		EA4DAFC2217DA1F3006E9B52 /* AxcCAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DAFB9217DA1F3006E9B52 /* AxcCAAnimation.m */; };
 		EA4DAFC3217DA1F3006E9B52 /* AxcPolarAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DAFBF217DA1F3006E9B52 /* AxcPolarAxis.m */; };
 		EA4DAFC4217DA1F3006E9B52 /* AxcDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DAFC0217DA1F3006E9B52 /* AxcDrawPath.m */; };
+		EAADA641217EB84F00319623 /* CircularSpectrumVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAADA640217EB84F00319623 /* CircularSpectrumVC.m */; };
+		EAADA646217EB89C00319623 /* AxcSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAADA645217EB89C00319623 /* AxcSpectrumView.m */; };
+		EAADA64C217EC54F00319623 /* AxcAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAADA64B217EC54F00319623 /* AxcAudioPlayer.m */; };
+		EAADA64E217EC90700319623 /* 觉醒.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAADA64D217EC90700319623 /* 觉醒.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +204,13 @@
 		EA4DAFBF217DA1F3006E9B52 /* AxcPolarAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcPolarAxis.m; sourceTree = "<group>"; };
 		EA4DAFC0217DA1F3006E9B52 /* AxcDrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcDrawPath.m; sourceTree = "<group>"; };
 		EA4DAFC1217DA1F3006E9B52 /* AxcDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcDrawPath.h; sourceTree = "<group>"; };
+		EAADA63F217EB84F00319623 /* CircularSpectrumVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularSpectrumVC.h; sourceTree = "<group>"; };
+		EAADA640217EB84F00319623 /* CircularSpectrumVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularSpectrumVC.m; sourceTree = "<group>"; };
+		EAADA644217EB89C00319623 /* AxcSpectrumView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcSpectrumView.h; sourceTree = "<group>"; };
+		EAADA645217EB89C00319623 /* AxcSpectrumView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcSpectrumView.m; sourceTree = "<group>"; };
+		EAADA64A217EC54F00319623 /* AxcAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAudioPlayer.h; sourceTree = "<group>"; };
+		EAADA64B217EC54F00319623 /* AxcAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAudioPlayer.m; sourceTree = "<group>"; };
+		EAADA64D217EC90700319623 /* 觉醒.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "觉醒.wav"; sourceTree = "<group>"; };
 		FBA72B4AE0ABEE0FDDFA5B09 /* libPods-Axc_Practice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Axc_Practice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -302,6 +313,7 @@
 		EA4DAD95217D5DAE006E9B52 /* PracticeVC */ = {
 			isa = PBXGroup;
 			children = (
+				EAADA63E217EB82100319623 /* 圆形频谱绘制 */,
 				EA4DADA4217D63B0006E9B52 /* 二维码镂空 */,
 			);
 			path = PracticeVC;
@@ -310,6 +322,7 @@
 		EA4DAD96217D5DB2006E9B52 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				EAADA64D217EC90700319623 /* 觉醒.wav */,
 				EA4DADA3217D625A006E9B52 /* PrefixHeader.pch */,
 				EA4DAD69217D5D29006E9B52 /* Main.storyboard */,
 				EA4DAD6C217D5D29006E9B52 /* Assets.xcassets */,
@@ -969,6 +982,43 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		EAADA63E217EB82100319623 /* 圆形频谱绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				EAADA63F217EB84F00319623 /* CircularSpectrumVC.h */,
+				EAADA640217EB84F00319623 /* CircularSpectrumVC.m */,
+				EAADA642217EB87400319623 /* View */,
+			);
+			path = "圆形频谱绘制";
+			sourceTree = "<group>";
+		};
+		EAADA642217EB87400319623 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAADA649217EC51500319623 /* AxcAudioPlayer */,
+				EAADA643217EB87C00319623 /* AxcSpectrumView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAADA643217EB87C00319623 /* AxcSpectrumView */ = {
+			isa = PBXGroup;
+			children = (
+				EAADA644217EB89C00319623 /* AxcSpectrumView.h */,
+				EAADA645217EB89C00319623 /* AxcSpectrumView.m */,
+			);
+			path = AxcSpectrumView;
+			sourceTree = "<group>";
+		};
+		EAADA649217EC51500319623 /* AxcAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EAADA64A217EC54F00319623 /* AxcAudioPlayer.h */,
+				EAADA64B217EC54F00319623 /* AxcAudioPlayer.m */,
+			);
+			path = AxcAudioPlayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1078,6 +1128,7 @@
 				EA4DAD6D217D5D29006E9B52 /* Assets.xcassets in Resources */,
 				EA4DAD9E217D5FA2006E9B52 /* MainTableViewCell.xib in Resources */,
 				EA4DAD6B217D5D29006E9B52 /* Main.storyboard in Resources */,
+				EAADA64E217EC90700319623 /* 觉醒.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1151,6 +1202,7 @@
 				EA4DAFC2217DA1F3006E9B52 /* AxcCAAnimation.m in Sources */,
 				EA4DAFAF217D9D3D006E9B52 /* AxcQrCodeView.m in Sources */,
 				EA4DAF91217D64AC006E9B52 /* UITextField+AxcPlaceholderLabelEx.m in Sources */,
+				EAADA641217EB84F00319623 /* CircularSpectrumVC.m in Sources */,
 				EA4DAF8E217D64AC006E9B52 /* NSString+AxcDataConversionEx.m in Sources */,
 				EA4DAF8C217D64AC006E9B52 /* NSString+AxcReplaceRichText.m in Sources */,
 				EA4DAFA3217D64AC006E9B52 /* AxcBaseVC.m in Sources */,
@@ -1161,6 +1213,7 @@
 				EA4DAFA6217D657F006E9B52 /* HollowOutVC.m in Sources */,
 				EA4DAF82217D64AC006E9B52 /* NSDate+AxcDateArithmeticEx.m in Sources */,
 				EA4DAD73217D5D29006E9B52 /* main.m in Sources */,
+				EAADA646217EB89C00319623 /* AxcSpectrumView.m in Sources */,
 				EA4DAF9B217D64AC006E9B52 /* UILabel+AxcCopyable.m in Sources */,
 				EA4DAFB4217DA0FC006E9B52 /* AxcQrCodeMaskView.m in Sources */,
 				EA4DAF99217D64AC006E9B52 /* UIViewController+AxcVCBackButtonEvent.m in Sources */,
@@ -1177,6 +1230,7 @@
 				EA4DAF89217D64AC006E9B52 /* NSString+AxcTextCalculation.m in Sources */,
 				EA4DAF8A217D64AC006E9B52 /* NSString+Axc_MD5_Ex.m in Sources */,
 				EA4DAF94217D64AC006E9B52 /* UIButton+AxcButtonCountDown.m in Sources */,
+				EAADA64C217EC54F00319623 /* AxcAudioPlayer.m in Sources */,
 				EA4DAF7F217D64AC006E9B52 /* AxcParameterObj.m in Sources */,
 				EA4DAF90217D64AC006E9B52 /* NSArray+AxcDataConversionEx.m in Sources */,
 				EA4DAFA1217D64AC006E9B52 /* AxcTouchManager.m in Sources */,

@@ -113,7 +113,9 @@
         }
         if ([_session canAddOutput:self.captureOutput]) {
             [_session addOutput:self.captureOutput];
-            self.captureOutput.metadataObjectTypes = self.metadataObjectTypes;
+            if (self.captureOutput.availableMetadataObjectTypes.count) {
+                self.captureOutput.metadataObjectTypes = self.metadataObjectTypes;
+            }
         }
     }
     return _session;

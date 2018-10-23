@@ -14,14 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - EZAudio (1.1.5):
+    - EZAudio/Full (= 1.1.5)
+  - EZAudio/Core (1.1.5)
+  - EZAudio/Full (1.1.5):
+    - EZAudio/Core
+    - TPCircularBuffer (= 1.1)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.6)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - TPCircularBuffer (1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - EZAudio
   - Masonry
   - MJRefresh
   - SDWebImage (~> 3.8.2)
@@ -29,16 +37,20 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - EZAudio
     - Masonry
     - MJRefresh
     - SDWebImage
+    - TPCircularBuffer
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
 
-PODFILE CHECKSUM: 746c9ceb4838424ddbd0d1711b24520aa9b857f5
+PODFILE CHECKSUM: a865a0a4cfc89f25268bbdb293a458a4972157ce
 
 COCOAPODS: 1.5.3

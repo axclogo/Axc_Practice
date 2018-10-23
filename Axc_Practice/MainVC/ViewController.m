@@ -23,7 +23,8 @@ UITableViewDataSource
     [self settingArrays];
 }
 - (void)settingArrays{
-    [self.dataListArray addObject:[MianModel VCName:@"HollowOutVC" title:@"镂空二维码测试" disTitle:@"-"]];
+    [self.dataListArray addObject:[MianModel VCName:@"HollowOutVC" title:@"镂空二维码练习" disTitle:@"-"]];
+    [self.dataListArray addObject:[MianModel VCName:@"CircularSpectrumVC" title:@"圆形频谱练习" disTitle:@"-"]];
     
     [self.tableView reloadData];
 }

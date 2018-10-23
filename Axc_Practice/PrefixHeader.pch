@@ -22,6 +22,13 @@
 #define rgba(r,g,b,a) RGBA(r,g,b,a)
 #define kThemeColor [UIColor AxcTool_colorHex:@"#2DC4A2"]
 
+#define KScienceTechnologyBlue  RGB(59,185,222)
+#define KScienceTechnologyBlue2 RGB(5,39,275)
+#define kBackColor              RGB(9, 33, 62)
+#define kVCBackColor            RGB(28, 42, 60)
+#define kPicBackColor           RGB(0, 40, 90)
+
+
 // 基类主体
 #import "AxcBasicSuitPrefixHeader.h"
 // 绘制类主体

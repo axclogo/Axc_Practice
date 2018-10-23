@@ -16,6 +16,7 @@
 @property(nonatomic , strong)AxcQrCodeView *qrCodeView;
 // 遮罩视图
 @property(nonatomic , strong)AxcQrCodeMaskView *qrCodeMaskView;
+
 @end
 
 @implementation HollowOutVC
