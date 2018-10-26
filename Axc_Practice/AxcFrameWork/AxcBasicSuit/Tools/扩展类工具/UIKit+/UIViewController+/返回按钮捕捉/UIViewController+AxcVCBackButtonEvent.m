@@ -20,20 +20,20 @@ static NSString *const kOriginDelegate = @"kOriginDelegate";
 + (void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        Class class = [self class];
+        Class class_ = [self class];
         
         SEL originSelector = @selector(viewDidLoad);
         SEL swizzledSelector = @selector(new_viewDidLoad);
         
-        Method originMethod = class_getInstanceMethod(class, originSelector);
-        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        Method originMethod = class_getInstanceMethod(class_, originSelector);
+        Method swizzledMethod = class_getInstanceMethod(class_, swizzledSelector);
         
-        BOOL didAddMethod = class_addMethod(class,
+        BOOL didAddMethod = class_addMethod(class_,
                                             originSelector,
                                             method_getImplementation(swizzledMethod),
                                             method_getTypeEncoding(swizzledMethod));
         if (didAddMethod) {
-            class_replaceMethod(class,
+            class_replaceMethod(class_,
                                 swizzledSelector,
                                 method_getImplementation(originMethod),
                                 method_getTypeEncoding(originMethod));

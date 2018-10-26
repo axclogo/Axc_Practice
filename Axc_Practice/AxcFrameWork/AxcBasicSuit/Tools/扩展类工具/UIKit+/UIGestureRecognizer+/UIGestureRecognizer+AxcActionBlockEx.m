@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 
 
-static const int block_key;
+static const int block_key = 0;
 
 @interface _AxcTool_UIGestureRecognizerBlockTarget : NSObject
 

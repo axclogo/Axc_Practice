@@ -31,8 +31,8 @@
 }
 
 - (UIViewController *)nameGetVC:(NSString *)name{
-    Class class = NSClassFromString(name);
-    UIViewController *vc = [[class alloc] init];
+    Class class_ = NSClassFromString(name);
+    UIViewController *vc = [[class_ alloc] init];
     return vc;
 }
 

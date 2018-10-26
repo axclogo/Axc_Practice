@@ -28,6 +28,7 @@
 #define kVCBackColor            RGB(28, 42, 60)
 #define kPicBackColor           RGB(0, 40, 90)
 
+#import <Foundation/Foundation.h>
 
 // 基类主体
 #import "AxcBasicSuitPrefixHeader.h"

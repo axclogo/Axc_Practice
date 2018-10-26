@@ -63,6 +63,7 @@
 		EA4DAFC2217DA1F3006E9B52 /* AxcCAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DAFB9217DA1F3006E9B52 /* AxcCAAnimation.m */; };
 		EA4DAFC3217DA1F3006E9B52 /* AxcPolarAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DAFBF217DA1F3006E9B52 /* AxcPolarAxis.m */; };
 		EA4DAFC4217DA1F3006E9B52 /* AxcDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DAFC0217DA1F3006E9B52 /* AxcDrawPath.m */; };
+		EA68272B218154F900E4FDB5 /* SplitWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68272A218154F900E4FDB5 /* SplitWordVC.m */; };
 		EAADA641217EB84F00319623 /* CircularSpectrumVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAADA640217EB84F00319623 /* CircularSpectrumVC.m */; };
 		EAADA646217EB89C00319623 /* AxcSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAADA645217EB89C00319623 /* AxcSpectrumView.m */; };
 		EAADA64C217EC54F00319623 /* AxcAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAADA64B217EC54F00319623 /* AxcAudioPlayer.m */; };
@@ -204,6 +205,8 @@
 		EA4DAFBF217DA1F3006E9B52 /* AxcPolarAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcPolarAxis.m; sourceTree = "<group>"; };
 		EA4DAFC0217DA1F3006E9B52 /* AxcDrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcDrawPath.m; sourceTree = "<group>"; };
 		EA4DAFC1217DA1F3006E9B52 /* AxcDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcDrawPath.h; sourceTree = "<group>"; };
+		EA682729218154F900E4FDB5 /* SplitWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitWordVC.h; sourceTree = "<group>"; };
+		EA68272A218154F900E4FDB5 /* SplitWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitWordVC.m; sourceTree = "<group>"; };
 		EAADA63F217EB84F00319623 /* CircularSpectrumVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularSpectrumVC.h; sourceTree = "<group>"; };
 		EAADA640217EB84F00319623 /* CircularSpectrumVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularSpectrumVC.m; sourceTree = "<group>"; };
 		EAADA644217EB89C00319623 /* AxcSpectrumView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcSpectrumView.h; sourceTree = "<group>"; };
@@ -313,6 +316,7 @@
 		EA4DAD95217D5DAE006E9B52 /* PracticeVC */ = {
 			isa = PBXGroup;
 			children = (
+				EA682728218154CD00E4FDB5 /* 拆词分析 */,
 				EAADA63E217EB82100319623 /* 圆形频谱绘制 */,
 				EA4DADA4217D63B0006E9B52 /* 二维码镂空 */,
 			);
@@ -982,6 +986,15 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		EA682728218154CD00E4FDB5 /* 拆词分析 */ = {
+			isa = PBXGroup;
+			children = (
+				EA682729218154F900E4FDB5 /* SplitWordVC.h */,
+				EA68272A218154F900E4FDB5 /* SplitWordVC.m */,
+			);
+			path = "拆词分析";
+			sourceTree = "<group>";
+		};
 		EAADA63E217EB82100319623 /* 圆形频谱绘制 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1238,6 +1251,7 @@
 				EA4DAF9F217D64AC006E9B52 /* UIImage+AxcSpecialEffectsDrawing.m in Sources */,
 				EA4DAFC3217DA1F3006E9B52 /* AxcPolarAxis.m in Sources */,
 				EA4DAF9C217D64AC006E9B52 /* UIImage+AxcImageRotating.m in Sources */,
+				EA68272B218154F900E4FDB5 /* SplitWordVC.m in Sources */,
 				EA4DAF98217D64AC006E9B52 /* UIView+AxcViewAppearanceEx.m in Sources */,
 				EA4DAF87217D64AC006E9B52 /* NSString+AxcUrlEncode.m in Sources */,
 				EA4DAF8B217D64AC006E9B52 /* NSString+AxcRegularEx.m in Sources */,
@@ -1415,8 +1429,13 @@
 			baseConfigurationReference = 0DAA76793CBFF8C5E12C51D6 /* Pods-Axc_Practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5R4T3ZJXKR;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.c.objc;
 				GCC_PREFIX_HEADER = Axc_Practice/PrefixHeader.pch;
 				INFOPLIST_FILE = Axc_Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1434,8 +1453,13 @@
 			baseConfigurationReference = 785A4893518DFD453F344878 /* Pods-Axc_Practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5R4T3ZJXKR;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.c.objc;
 				GCC_PREFIX_HEADER = Axc_Practice/PrefixHeader.pch;
 				INFOPLIST_FILE = Axc_Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

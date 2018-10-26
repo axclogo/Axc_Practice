@@ -22,6 +22,7 @@ PODS:
     - TPCircularBuffer (= 1.1)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.6)
+  - Parsimmon (0.3.4)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - EZAudio
   - Masonry
   - MJRefresh
+  - Parsimmon (~> 0.3.4)
   - SDWebImage (~> 3.8.2)
 
 SPEC REPOS:
@@ -40,6 +42,7 @@ SPEC REPOS:
     - EZAudio
     - Masonry
     - MJRefresh
+    - Parsimmon
     - SDWebImage
     - TPCircularBuffer
 
@@ -48,9 +51,10 @@ SPEC CHECKSUMS:
   EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
+  Parsimmon: 48ca7a7c78261b34b215c17d1a13543d4f72cc51
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
 
-PODFILE CHECKSUM: a865a0a4cfc89f25268bbdb293a458a4972157ce
+PODFILE CHECKSUM: 2b392c3dc8ca92b0e21bf12d29c7a00a973ab350
 
 COCOAPODS: 1.5.3
