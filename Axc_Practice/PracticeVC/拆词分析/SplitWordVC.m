@@ -25,9 +25,12 @@
 }
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
+    
     self.textView.frame = CGRectMake(0, 0, kScreenWidth, 100);
     self.showTextView.frame = CGRectMake(0, 110, kScreenWidth, 300);
     self.analysisBtn.frame = CGRectMake(10, kScreenHeight - 150, kScreenWidth-20, 40);
+    
+    
 }
 - (void)click_analysisBtn{
 //    NSMutableString *showString = @"".mutableCopy;
